@@ -1,2 +1,2 @@
-# CustomConnectors
-This repository contains the slides and demo files for Ted Pattison's presentation titled Extending PowerApps and Flow using Custom Connectors
+# Extending PowerApps and Flow using Custom Connectors
+This repository contains the slides and demo files for Ted Pattison's presentation titled **Extending PowerApps and Flow using Custom Connectors**.
