@@ -1,0 +1,207 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Customers Web Service",
+    "description": "A simple custom connector to an OData web service",
+    "version": "1.0"
+  },
+  "host": "subliminalsystems.com",
+  "basePath": "/api/",
+  "schemes": [
+    "http"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/Customers/": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "value": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "CustomerId": {
+                        "type": "integer",
+                        "format": "int32",
+                        "description": "CustomerId"
+                      },
+                      "FirstName": {
+                        "type": "string",
+                        "description": "FirstName"
+                      },
+                      "LastName": {
+                        "type": "string",
+                        "description": "LastName"
+                      },
+                      "Company": {
+                        "type": "string",
+                        "description": "Company"
+                      },
+                      "EmailAddress": {
+                        "type": "string",
+                        "description": "EmailAddress"
+                      },
+                      "WorkPhone": {
+                        "type": "string",
+                        "description": "WorkPhone"
+                      },
+                      "HomePhone": {
+                        "type": "string",
+                        "description": "HomePhone"
+                      },
+                      "Address": {
+                        "type": "string",
+                        "description": "Address"
+                      },
+                      "City": {
+                        "type": "string",
+                        "description": "City"
+                      },
+                      "State": {
+                        "type": "string",
+                        "description": "State"
+                      },
+                      "Zipcode": {
+                        "type": "string",
+                        "description": "Zipcode"
+                      },
+                      "Gender": {
+                        "type": "string",
+                        "description": "Gender"
+                      },
+                      "BirthDate": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "BirthDate"
+                      },
+                      "FirstPurchaseDate": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "FirstPurchaseDate"
+                      },
+                      "LastPurchaseDate": {
+                        "type": "string",
+                        "format": "date-time",
+                        "description": "LastPurchaseDate"
+                      }
+                    }
+                  },
+                  "description": "value"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get Customers",
+        "description": "Get Customers",
+        "operationId": "GetCustomers",
+        "parameters": []
+      }
+    },
+    "/Customers({CustomerId})": {
+      "get": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "odata.metadata": {
+                  "type": "string",
+                  "description": "odata.metadata"
+                },
+                "CustomerId": {
+                  "type": "integer",
+                  "format": "int32",
+                  "description": "CustomerId"
+                },
+                "FirstName": {
+                  "type": "string",
+                  "description": "FirstName"
+                },
+                "LastName": {
+                  "type": "string",
+                  "description": "LastName"
+                },
+                "Company": {
+                  "type": "string",
+                  "description": "Company"
+                },
+                "EmailAddress": {
+                  "type": "string",
+                  "description": "EmailAddress"
+                },
+                "WorkPhone": {
+                  "type": "string",
+                  "description": "WorkPhone"
+                },
+                "HomePhone": {
+                  "type": "string",
+                  "description": "HomePhone"
+                },
+                "Address": {
+                  "type": "string",
+                  "description": "Address"
+                },
+                "City": {
+                  "type": "string",
+                  "description": "City"
+                },
+                "State": {
+                  "type": "string",
+                  "description": "State"
+                },
+                "Zipcode": {
+                  "type": "string",
+                  "description": "Zipcode"
+                },
+                "Gender": {
+                  "type": "string",
+                  "description": "Gender"
+                },
+                "BirthDate": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "BirthDate"
+                },
+                "FirstPurchaseDate": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "FirstPurchaseDate"
+                },
+                "LastPurchaseDate": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "LastPurchaseDate"
+                }
+              }
+            }
+          }
+        },
+        "summary": "Get Customer",
+        "description": "Get Customer operation",
+        "operationId": "GetCustomer",
+        "parameters": [
+          {
+            "name": "CustomerId",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
